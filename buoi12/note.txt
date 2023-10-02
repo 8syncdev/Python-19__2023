@@ -1,0 +1,22 @@
+'''
+    Xử lý file: text(*.txt)
+    with = using: thực thi hành động khi hợp lệ và tự kết thúc hành động
+'''
+
+'''
+    Absolute Path: Tuyệt đối
+        - Là đường với tên đầy đủ xuất phát từ ổ đỉa(C,D,E)
+        - Ví du: D:\Users\Teach\Python_19\buoi12\FILE\INPUT.txt
+    Relative Path: Tương đối
+        - Đường dẫn chỉ định vào thư mục hiện tại.
+        - Ví dụ: buoi12\FILE\INPUT.txt
+        - Cách lấy ra INPUT.txt
+    -- Chỉ định:
+        - ./: Chỉ vị trí hiện tại có bao nhiêu thư mục và file.
+
+    open(file=?, mode=?)
+    mode: chức năng. Ví dụ: đọc, ghi, vừa đọc vừa ghi
+        - r: read (đọc)
+        - w: write (ghi)
+    encoding = 'utf-8'
+'''

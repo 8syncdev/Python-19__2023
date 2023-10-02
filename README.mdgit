@@ -1,0 +1,1 @@
+"# Python-19__2023"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/KiLopFD/Python-19__2023.gitgit push -u origin main
