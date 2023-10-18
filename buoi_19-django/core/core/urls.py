@@ -16,14 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views.main_view import home, about, add, sub
+# from .views.main_view import home, about, add, sub
+from user_app.views import about_view, home_view
 
 
 urlpatterns = [
     # http://127.0.0.1:8000/ + '' -> http://127.0.0.1:8000/
     path('admin/', admin.site.urls),
-    path('', home), # http://127.0.0.1:8000/ + '' -> http://127.0.0.1:8000/
-    path('about/', about), # http://127.0.0.1:8000/ + 'about' -> http://127.0.0.1:8000/about
-    path('add/', add),
-    path('sub/', sub)
+    # path('', home), # http://127.0.0.1:8000/ + '' -> http://127.0.0.1:8000/
+    # path('about/', about), # http://127.0.0.1:8000/ + 'about' -> http://127.0.0.1:8000/about
+    # path('add/', add),
+    # path('sub/', sub)
+    path('', home_view.HomeView.get),
+    path('filter/', home_view.filter_data),
 ]
